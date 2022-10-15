@@ -1,4 +1,4 @@
-﻿/* Проверочная работа removingNumbers
+﻿/* Проверочная работа
 Задача: Написать программу, которая из сформированного массива строк 
 содержащих символы и числа создать массив из строк, в который попадут 
 только символы, не являющиеця цифрами. 
@@ -82,7 +82,7 @@ Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.WriteLine("Массив строк содержащий цифры:");
 Console.ForegroundColor = ConsoleColor.White;
 printDigitColor(array);
-Console.Write("\n");
+Console.Write("\n\n");
 Console.Write(String.Join(" ", RemovingNumbers(array)));
 Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.WriteLine("\nМассив строк после удаления цифр");
