@@ -6,7 +6,7 @@
 но лучше сделать автогенерацию данных. 
 При решении не использовать "читерство".
 */
-//using System;
+
 string autoGenerationText()
 {
     string result = "";
@@ -43,13 +43,9 @@ string[] RemovingNumbers(string[] arr)
         {
             if ((int)item > 57)
             {
-                //Console.Write(item);
                 newString += Convert.ToString((char)item);
-
             }
-
         }
-        //Console.Write("\n");
         result[i] = newString;
     }
     return result;
