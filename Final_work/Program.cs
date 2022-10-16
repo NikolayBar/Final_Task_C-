@@ -14,9 +14,10 @@ string autoGenerationText()
     while (result.Length < numberCharacters)
     {
         int chKod = new Random().Next(48, 123);
-        if (chKod >= 48 && chKod <= 57) result += (char)chKod;
-        if (chKod >= 65 && chKod <= 90) result += (char)chKod;
-        if (chKod >= 97 && chKod <= 122) result += (char)chKod;
+        if (chKod >= 48 && chKod <= 57 ||
+            chKod >= 65 && chKod <= 90 ||
+            chKod >= 97 && chKod <= 122
+           ) result += (char)chKod;
     }
 
     return result;
@@ -83,7 +84,7 @@ Console.Write(String.Join(" ", RemovingNumbers(array)));
 Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.WriteLine("\nМассив строк после удаления цифр");
 Console.ForegroundColor = ConsoleColor.White;
-
+Console.ReadKey();
 
 
 
